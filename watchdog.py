@@ -13,12 +13,14 @@ app = Flask(__name__)
 @app.route("/ip", methods=["GET"])
 def get_my_ip():
     timestamp = datetime.datetime.utcnow()
-    with open(f'{request.remote_addr}.last', 'wb') as file:
+    ip  = request.remote_addr
+    with open(f'last_beat/{request.remote_addr}', 'wb') as file:
         file.write(pickle.dumps(timestamp))
+        file.write(pickle.dumps(ip))
     ip = jsonify({'ip': request.remote_addr}), 200
-    print('ip', request.remote_addr)
+    print('ip:', request.remote_addr)
     return ip
 
 if __name__ == '__main__':
     logging.basicConfig(filename='client.log',level=logging.DEBUG)
-    app.run(debug=True)                                                                                                                                                                     
+    app.run(debug=True, host='0.0.0.0', port=5000)                                                                                                                                                                     
