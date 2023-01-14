@@ -1,8 +1,12 @@
 import pickle 
+import os
 from datetime import datetime, timedelta
 import datetime as dt
+
+
+
 def time_stamp():
-    with open('app/127.0.0.1.last', 'rb')as file:
+    with open('..//127.0.0.1.last', 'rb')as file:
         fc = file.read()
         time_stamp = pickle.loads(fc)
         return time_stamp
