@@ -39,7 +39,7 @@ present = datetime.now()
 
 diff = (present - time_stamp() ).total_seconds() 
 
-if diff > 60 :
+if diff > 1200 :
     with smtplib.SMTP_SSL('smtp.gmail.com', 465, context=context) as smtp:
         smtp.login(email_sender, email_password)
         smtp.sendmail(email_sender, email_receiver, em.as_string())
