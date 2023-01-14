@@ -29,10 +29,11 @@ em.set_content(body)
 context = ssl.create_default_context()
 
 def time_stamp():
-    with open('..//127.0.0.1.last', 'rb')as file:
-        fc = file.read()
-        time_stamp = pickle.loads(fc)
-        return time_stamp
+    for filename in glob.glob('..//*.last'):
+        with open(filename, 'rb')as file:
+            fc = file.read()
+            time_stamp = pickle.loads(fc)
+            return time_stamp
 
 present = datetime.now()
 
