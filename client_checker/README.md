@@ -2,5 +2,5 @@
 
 
 *using smtp service for email notifier.
-*add two step authentication @google account to add app passwords 
+*added two step authentication @google account to add app passwords 
 
