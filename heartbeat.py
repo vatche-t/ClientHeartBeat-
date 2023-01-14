@@ -4,7 +4,7 @@ from loguru import logger
 import sys
 
 try:
-    r = requests.get('http://127.0.0.1:5000/ip', timeout=10)
+    r = requests.get('http://104.237.234.154:5000/ip', timeout=10)
 
     if r.status_code == 200:
          logger.add("special.log", filter=lambda record: "special" in record["extra"])
@@ -14,5 +14,5 @@ try:
         print("server not found")
 except Exception as e:
     logger.add("special.log", filter=lambda record: "special" in record["extra"])
-    logger.debug("log is in the console")
-    logger.bind(special=True).info("log is in the file")
+    logger.debug("Server not found")
+    logger.bind(special=True).info("Server not found")
