@@ -13,4 +13,3 @@ fileHandler to testthe modification of the log file.
 
 
 
-git remote add origin https://vatche-t:1Tmboozikapple@github.com/vatche-t/ClientHeartBeat.git
