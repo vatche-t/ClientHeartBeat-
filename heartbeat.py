@@ -13,6 +13,5 @@ try:
     else:
         print("server not found")
 except Exception as e:
-    logger.add("special.log", filter=lambda record: "special" in record["extra"])
-    logger.debug("log is in the console")
-    logger.bind(special=True).info("log is in the file")
+    logger.debug("Server has been terminated")
+    logger.bind(special=True).info("Server has been terminated")
