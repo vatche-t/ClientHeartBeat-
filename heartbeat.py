@@ -14,5 +14,5 @@ try:
         print("server not found")
 except Exception as e:
     logger.add("special.log", filter=lambda record: "special" in record["extra"])
-    logger.debug("Server not found")
-    logger.bind(special=True).info("Server not found")
+    logger.debug("log is in the console")
+    logger.bind(special=True).info("log is in the file")
