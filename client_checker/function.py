@@ -43,11 +43,7 @@ def check_client():
             time_stamp = pickle.loads(fc)
             #return time_stamp
         now = datetime.utcnow()
-<<<<<<< HEAD
-        if (now - time_stamp).total_seconds() > 60 * 0.3:
-=======
         if (now - time_stamp).total_seconds() > 60 * 200:
->>>>>>> e213d03ede9af6081a115cb0250897e381ae2e12
             print(f'Client {ip} has been disconnected for more than 20 minutes at: {time_stamp}')
             return ip
         else:
@@ -65,8 +61,4 @@ check_client()
 #         smtp.login(email_sender, email_password)
 #         smtp.sendmail(email_sender, email_receiver, em.as_string())
 # else:
-<<<<<<< HEAD
 #     print("client is connected....")
-=======
-#     print("client is connected....")
->>>>>>> e213d03ede9af6081a115cb0250897e381ae2e12

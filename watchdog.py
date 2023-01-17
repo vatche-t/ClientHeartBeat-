@@ -23,8 +23,4 @@ def get_my_ip():
 
 if __name__ == '__main__':
     logging.basicConfig(filename='client.log',level=logging.DEBUG)
-<<<<<<< HEAD:watchdog.py
     app.run(debug=True, host='0.0.0.0', port=5000)                                                                                                                                                                     
-=======
-    app.run(debug=True, host='0.0.0.0', port=5000)                                                                                                                                                                     
->>>>>>> e213d03ede9af6081a115cb0250897e381ae2e12:app.py
