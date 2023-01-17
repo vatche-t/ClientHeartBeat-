@@ -13,7 +13,7 @@ email_receiver = 'vatche.thorossian@gmail.com'
 
 def get_ips():
     results = []
-    testdir = "../last_beat"
+    testdir = "../../last_beat"
     for f in os.listdir(testdir):
         if f.endswith(''):
             results.append(f)
@@ -27,7 +27,7 @@ def check_client():
     context = ssl.create_default_context()
     #for filename in [f'../last_beat/{ip}' for ip in get_ips()]:
     for ip in get_ips():
-        filename = f'../last_beat/{ip}'
+        filename = f'../../last_beat/{ip}'
         with open(filename, 'rb')as file:
             fc = file.read()
             time_stamp = pickle.loads(fc)
