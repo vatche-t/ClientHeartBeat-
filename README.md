@@ -13,3 +13,4 @@ fileHandler to testthe modification of the log file.
 
 
 
+Running on ubuntu server (20.0.0)
