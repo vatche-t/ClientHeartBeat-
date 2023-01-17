@@ -11,5 +11,12 @@ alert_client to test the status of the server.
 fileHandler to testthe modification of the log file.
 
 
+Running on ubuntu server (20.0.0)
 
+
+#1 Run watchdog.py script
+#2 Run heartbeat.py script
+#3 Run Main.py script
+
+@Client_checker run client_main.py for heartbeat monitoring.
 
