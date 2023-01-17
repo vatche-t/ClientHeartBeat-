@@ -6,9 +6,9 @@ import smtplib
 import ssl
 from email.message import EmailMessage
 
-email_sender = 'vatche.selleryar@gmail.com'
-email_password = 'xvoiaghwmzdmpwdu'
-email_receiver = 'vatche.thorossian@gmail.com'
+email_sender = '[sender email]'
+email_password = '[sender pass]'
+email_receiver = '[receiver email]'
 
 
 def get_ips():
