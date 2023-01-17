@@ -8,8 +8,8 @@ import requests
 
 def send_to_telegram(message):
 
-    apiToken = '5977566963:AAEVWXcwN9miRHLyq2etTq-qP1w8wFsrz90'
-    chatID = '260376634'
+    apiToken = '[your Api token]'
+    chatID = '[your chat ID]'
     apiURL = f'https://api.telegram.org/bot{apiToken}/sendMessage'
 
     try:
